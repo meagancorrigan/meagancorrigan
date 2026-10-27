@@ -10,3 +10,8 @@ After graduation I'd like to take a year and go travel to meet new people, exper
 
 *Reviewed with help from Claude (Anthropic, 2026); written and edited by me.*
 
+
+## Engagements
+
+FX hedging (Scenario 20: lithium-refining): see capabilities/fx-hedging/
+
