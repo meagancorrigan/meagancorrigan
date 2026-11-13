@@ -25,3 +25,16 @@
 **How I checked it:** Name Manager for all ten names; clicked calculated cells to confirm formulas; changed S0_in to 1.20 and saw the sensitivity table move; reviewed the Checks tab (all PASS except the expected FLAG on the forward gap).
 
 **Result:** model.xlsx committed to capabilities/fx-hedging/; audit note in analysis/. Spec fixes to follow as separate commits.
+
+
+## 2026-11-13: Stage 4 market data
+
+**Tool:** Claude (web chat)
+
+**What I asked:** Find live inputs for EURUSD spot, USD and EUR rates near my 273-day tenor, compute the CIP-implied forward, and help me populate the workbook and write the memo.
+
+**What needed checking:** I re-opened the ECB, Treasury and Euribor pages to confirm every value. Rates were interpolated to 273 days, and Treasury yields are bond-equivalent, not ACT/360. The scenario forward (1.1756) is far from the implied forward (1.1194), a gap of $618,195.
+
+**How I checked it:** Workbook Checks tab (all PASS except the expected FLAG on the forward gap) and the FX Hedging Lab, which matched on all outputs and the full sensitivity grid.
+
+**Result:** Workbook repopulated, memo committed to data/.
