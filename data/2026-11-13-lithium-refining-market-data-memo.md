@@ -27,6 +27,6 @@ Date: 2026-11-13. Data as of market close 2026-11-12.
 - Money-market proceeds equal FC_AMT x implied forward within tolerance (PASS). Sensitivity table recalculates around S0_in = 1.1081.
 
 ## FX Lab cross-check
-- To be completed after I enter my live inputs in the FX Hedging Lab.
+- I entered my live inputs (S0_in 1.1081, F0_in 1.1756, R_USD 4.535%, R_FC 3.158%, T 273 days, strikes 1.1081, premiums 0.0224 and 0.0376) in the FX Hedging Lab. Forward ($12,931,600), the three money-market steps (EUR 10,742,731; $11,904,021; $12,313,405), the implied forward (1.1194) and the sensitivity grid matched my workbook. The lab's red parity banner flags the $618,195 gap between the quoted forward and the implied forward. Because the lab and my workbook use the same formulas and agree, I attribute the gap to the scenario quote being inconsistent with live rates, not to a formula error. Stage 5 will address what it means.
 
 *Data hunt assisted by Claude (Anthropic, 2026); values verified by me against the cited sources.*
