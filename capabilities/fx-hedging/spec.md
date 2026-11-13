@@ -139,8 +139,3 @@ Each of these is a gray cell with this exact name:
 Formats: dollar amounts in whole dollars with thousands commas, exchange rates to 4 decimals, interest rates as a percent to 3 decimals.
 
 The Checks tab shows the status of every rule in section 7.
-- The sensitivity table and its chart
-
-Formats: dollar amounts in whole dollars with thousands commas, exchange rates to 4 decimals, interest rates as a percent to 3 decimals.
-
-The Checks tab shows the status of every rule in section 7.
