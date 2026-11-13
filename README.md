@@ -13,5 +13,15 @@ After graduation I'd like to take a year and go travel to meet new people, exper
 
 ## Engagements
 
-FX hedging (Scenario 20: lithium-refining): see capabilities/fx-hedging/
+### FX hedging: Scenario 20, lithium-refining
+
+A U.S. lithium refiner is owed EUR 11,000,000 in 273 days. I compared a forward, a money-market hedge and a put option, and wrote a recommendation to the CFO.
+
+- Stage 1, executive brief: [docs/briefs/2026-10-26-lithium-refining-hedge-brief.md](docs/briefs/2026-10-26-lithium-refining-hedge-brief.md)
+- Stage 2, model specification: [capabilities/fx-hedging/spec.md](capabilities/fx-hedging/spec.md)
+- Stage 3, workbook: [capabilities/fx-hedging/model.xlsx](capabilities/fx-hedging/model.xlsx)
+- Stage 3, build audit: [analysis/2026-11-06-lithium-refining-build-audit-analysis.md](analysis/2026-11-06-lithium-refining-build-audit-analysis.md)
+- Stage 4, market data memo: [data/2026-11-13-lithium-refining-market-data-memo.md](data/2026-11-13-lithium-refining-market-data-memo.md)
+- Stage 5, validation: [analysis/2026-11-13-lithium-refining-validation-analysis.md](analysis/2026-11-13-lithium-refining-validation-analysis.md)
+- Stage 5, decision memo: [docs/decisions/2026-11-13-lithium-refining-hedge-decision-memo.md](docs/decisions/2026-11-13-lithium-refining-hedge-decision-memo.md)
 
