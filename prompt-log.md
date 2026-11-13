@@ -38,3 +38,12 @@
 **How I checked it:** Workbook Checks tab (all PASS except the expected FLAG on the forward gap) and the FX Hedging Lab, which matched on all outputs and the full sensitivity grid.
 
 **Result:** Workbook repopulated, memo committed to data/.
+
+
+
+## 2026-11-13: Stage 5 validation and decision memo
+
+- **Asked:** Run a fresh Claude agent (no history) with only my spec and my Stage 4 market-data memo, no coaching: "Using only those two documents, compute all the hedge outcomes the specification describes and recommend a strategy. Show your numbers, state any assumptions you had to make where the documents were unclear, and give a recommendation to the CFO." Then compare its output with my workbook, verify by hand, and draft the validation doc and decision memo.
+- **Produced:** The raw LLM output, a comparison table, a hand-verification table, a spec retrospective, and a decision memo.
+- **What was wrong and how it was caught:** The LLM matched my workbook to the dollar. What it caught was in my documents: my spec's check figures were from placeholder inputs and went stale, my Treasury yield was bond-equivalent and not ACT/360 (about USD 5,608 on money-market proceeds), the spec never said whether the 1.1756 forward is firm, and the given premiums don't fit put-call parity at live rates. I recomputed the forward, the three money-market steps, two put outcomes, the implied forward and the gap by hand and they matched. The agent was run inside my working session, not in a separate chat window.
+
